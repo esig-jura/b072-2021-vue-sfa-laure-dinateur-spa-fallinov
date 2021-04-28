@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <entete-de-page />
     <router-view/>
   </div>
 </template>
 
 <script>
+import EnteteDePage from "@/components/EnteteDePage";
 export default {
   name: 'LaureDinateur',
+  components: {EnteteDePage},
 };
 </script>
 
