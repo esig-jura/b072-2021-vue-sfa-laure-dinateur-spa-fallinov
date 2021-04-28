@@ -1,21 +1,21 @@
 <template>
   <header>
     <!-- Logo du site -->
-    <a class="logo" href="index.html">
+    <router-link class="logo" to="/">
       <div class="nom">Laure Dinateur</div>
       <div class="metier">Graphiste</div>
-    </a><nav><!-- Menu de navigation -->
+    </router-link><nav><!-- Menu de navigation -->
     <ul>
       <li>
         <!-- Lien actif : On ajoute la classe .actif au lien
         représentant la page actuelle -->
-        <router-link to="/">Accueil</router-link>
+        <router-link to="/" exact-active-class="actif">Accueil</router-link>
       </li>
       <li>
-        <router-link to="/infos">Qui suis-je ?</router-link>
+        <router-link to="/infos" exact-active-class="actif">Qui suis-je ?</router-link>
       </li>
       <li>
-        <router-link to="/contact">Me contacter</router-link>
+        <router-link to="/contact" exact-active-class="actif">Me contacter</router-link>
       </li>
     </ul>
   </nav>
